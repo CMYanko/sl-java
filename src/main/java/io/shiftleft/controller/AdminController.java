@@ -86,10 +86,10 @@ public class AdminController {
     String succ = "redirect:/admin/printSecrets";
 
     try {
-      // no cookie no fun
+      // no cookie no fun, is it fixed?
       if (!auth.equals("notset")) {
         if(isAdmin(auth)) {
-          //request.getSession().setAttribute("auth",auth);
+          request.getSession().setAttribute("auth",auth);
           return succ;
         }
       }
