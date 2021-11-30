@@ -67,7 +67,7 @@ public class AdminController {
       return null;
     } catch (IOException ex) {
       ex.printStackTrace();
-      // redirect to /
+      //  redirect to /
       return fail;
     }
   }
@@ -89,7 +89,7 @@ public class AdminController {
       // no cookie no fun
       if (!auth.equals("notset")) {
         if(isAdmin(auth)) {
-          //request.getSession().setAttribute("auth",auth);
+          // request.getSession().setAttribute("auth",auth);
           return succ;
         }
       }
