@@ -67,7 +67,7 @@ public class AdminController {
       return null;
     } catch (IOException ex) {
       ex.printStackTrace();
-      // redirect to /
+      redirect to /
       return fail;
     }
   }
