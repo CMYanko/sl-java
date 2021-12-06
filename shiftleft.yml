@@ -4,10 +4,6 @@ build_rules:
   - id: no-net-new-high-impact
     finding_types:
       - vuln
-      - secrets
-      - oss-vuln
-    options:
-      reachable: true
     severity:
       - "critical" 
       - "moderate"
