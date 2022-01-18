@@ -65,6 +65,7 @@ jobs:
             ${GITHUB_WORKSPACE}/sl check-analysis --app ${{ github.event.repository.name }}  \
             --target tag.branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} \
             --report \
+            --v2 \
             --github-pr-number=${{github.event.number}} \
             --github-pr-user=${{ github.repository_owner }} \
             --github-pr-repo=${{ github.event.repository.name }} \
