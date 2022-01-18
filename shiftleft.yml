@@ -7,6 +7,10 @@ build_rules:
       - oss_vuln
     options:
       reachable: true
+    owasp_category:
+      - a2-broken-authentication
+      - a3-sensitive-data-exposure
+      - a5-broken-access-control
     severity:
       - "critical" 
       - "moderate"
