@@ -1,10 +1,10 @@
 # Example analysis remediation config
 methods:
-# - method: org.slf4j.Logger.info:void(java.lang.String,java.lang.Object)
-#   tags:
-#     - key: category
-#       value: Sensitive Data Leak
-# - pattern: Logger.debug
-#   tags:
-#     - key: category
-#       value: Sensitive Data Leak
+  - method: io.shiftleft.controller.AdminController.isAdmin:boolean(java.lang.String)
+    tags:
+      - key: category
+        value: Deserialization
+  - pattern: .updateCustomer
+    tags:
+      - key: category
+        value: Sensitive Data Leak
