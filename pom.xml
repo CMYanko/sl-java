@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>1.5.22.RELEASE</version>
     </parent>
     <dependencies>
         <dependency>
@@ -19,7 +19,7 @@
         <dependency>
     		<groupId>org.apache.httpcomponents</groupId>
     		<artifactId>httpclient</artifactId>
-    		<version>4.3.4</version>
+    		<version>4.3.6</version>
 		</dependency>
 		<dependency>
     		<groupId>org.zeroturnaround</groupId>
